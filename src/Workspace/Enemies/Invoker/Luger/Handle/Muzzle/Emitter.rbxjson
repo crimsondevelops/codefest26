@@ -1,0 +1,8 @@
+{
+  "className": "ParticleEmitter",
+  "name": "Emitter",
+  "parentId": "4657182",
+  "path": "Workspace/Enemies/Invoker/Luger/Handle/Muzzle/Emitter",
+  "properties": [],
+  "referenceId": "4657649"
+}

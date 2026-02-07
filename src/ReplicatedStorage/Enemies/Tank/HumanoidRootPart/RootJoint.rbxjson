@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "RootJoint",
+  "parentId": "4656044",
+  "path": "ReplicatedStorage/Enemies/Tank/HumanoidRootPart/RootJoint",
+  "properties": [],
+  "referenceId": "4656046"
+}

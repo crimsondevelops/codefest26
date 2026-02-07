@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "WalkAnim",
+  "parentId": "4655772",
+  "path": "ReplicatedStorage/Enemies/Cultist/Animate/walk/WalkAnim",
+  "properties": [],
+  "referenceId": "4655773"
+}

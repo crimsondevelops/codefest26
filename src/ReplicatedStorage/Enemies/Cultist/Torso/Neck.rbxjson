@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Neck",
+  "parentId": "4655831",
+  "path": "ReplicatedStorage/Enemies/Cultist/Torso/Neck",
+  "properties": [],
+  "referenceId": "4655844"
+}

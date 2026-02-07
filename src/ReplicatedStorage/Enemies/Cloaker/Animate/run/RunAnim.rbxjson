@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "RunAnim",
+  "parentId": "4656097",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Animate/run/RunAnim",
+  "properties": [],
+  "referenceId": "4656098"
+}

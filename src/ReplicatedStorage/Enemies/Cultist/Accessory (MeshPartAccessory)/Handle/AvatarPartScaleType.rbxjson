@@ -1,0 +1,8 @@
+{
+  "className": "StringValue",
+  "name": "AvatarPartScaleType",
+  "parentId": "4655812",
+  "path": "ReplicatedStorage/Enemies/Cultist/Accessory (MeshPartAccessory)/Handle/AvatarPartScaleType",
+  "properties": [],
+  "referenceId": "4655814"
+}

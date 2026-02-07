@@ -1,8 +1,8 @@
 {
   "className": "ImageLabel",
   "name": "VLImage",
-  "parentId": "9407",
+  "parentId": "9545",
   "path": "Workspace/Greenery Pack/VolumetricLight/LightBillboard/VLImage",
   "properties": [],
-  "referenceId": "10217"
+  "referenceId": "10865"
 }

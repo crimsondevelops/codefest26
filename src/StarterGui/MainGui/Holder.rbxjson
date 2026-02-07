@@ -1,8 +1,8 @@
 {
   "className": "Frame",
   "name": "Holder",
-  "parentId": "15230",
+  "parentId": "16542",
   "path": "StarterGui/MainGui/Holder",
   "properties": [],
-  "referenceId": "10198"
+  "referenceId": "10838"
 }

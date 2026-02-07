@@ -1,0 +1,8 @@
+{
+  "className": "Part",
+  "name": "Torso",
+  "parentId": "4655752",
+  "path": "ReplicatedStorage/Enemies/Cultist/Torso",
+  "properties": [],
+  "referenceId": "4655831"
+}

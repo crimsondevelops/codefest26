@@ -1,0 +1,8 @@
+{
+  "className": "Accessory",
+  "name": "MeshPartAccessory",
+  "parentId": "4655860",
+  "path": "ReplicatedStorage/Enemies/Invoker/MeshPartAccessory",
+  "properties": [],
+  "referenceId": "4655929"
+}

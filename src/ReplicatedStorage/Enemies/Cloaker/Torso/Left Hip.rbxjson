@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Left Hip",
+  "parentId": "4656169",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Torso/Left Hip",
+  "properties": [],
+  "referenceId": "4656181"
+}

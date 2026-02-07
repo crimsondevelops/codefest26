@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "Torso",
+  "parentId": "4656116",
+  "path": "ReplicatedStorage/Enemies/Cloaker/AnimSaves/Idle_Fighter/Keyframe/HumanoidRootPart/Torso",
+  "properties": [],
+  "referenceId": "4656118"
+}

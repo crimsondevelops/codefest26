@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "ScaleDampeningPercent",
+  "parentId": "4655990",
+  "path": "ReplicatedStorage/Enemies/Tank/Animate/ScaleDampeningPercent",
+  "properties": [],
+  "referenceId": "4655991"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Vector3Value",
+  "name": "OriginalSize",
+  "parentId": "4655930",
+  "path": "ReplicatedStorage/Enemies/Invoker/MeshPartAccessory/Handle/OriginalSize",
+  "properties": [],
+  "referenceId": "4655934"
+}

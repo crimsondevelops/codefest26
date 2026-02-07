@@ -1,0 +1,8 @@
+{
+  "className": "Part",
+  "name": "Torso",
+  "parentId": "4655860",
+  "path": "ReplicatedStorage/Enemies/Invoker/Torso",
+  "properties": [],
+  "referenceId": "4655953"
+}

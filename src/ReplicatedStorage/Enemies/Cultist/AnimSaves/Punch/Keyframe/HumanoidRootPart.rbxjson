@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "HumanoidRootPart",
+  "parentId": "4655798",
+  "path": "ReplicatedStorage/Enemies/Cultist/AnimSaves/Punch/Keyframe/HumanoidRootPart",
+  "properties": [],
+  "referenceId": "4655799"
+}

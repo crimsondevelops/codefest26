@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "JumpAnim",
+  "parentId": "4656095",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Animate/jump/JumpAnim",
+  "properties": [],
+  "referenceId": "4656096"
+}

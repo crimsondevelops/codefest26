@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "ScaleDampeningPercent",
+  "parentId": "4655861",
+  "path": "ReplicatedStorage/Enemies/Invoker/Animate/ScaleDampeningPercent",
+  "properties": [],
+  "referenceId": "4655862"
+}

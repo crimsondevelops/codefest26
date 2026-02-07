@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "RootJoint",
+  "parentId": "4656159",
+  "path": "ReplicatedStorage/Enemies/Cloaker/HumanoidRootPart/RootJoint",
+  "properties": [],
+  "referenceId": "4656161"
+}

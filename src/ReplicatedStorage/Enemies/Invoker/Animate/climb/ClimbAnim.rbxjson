@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "ClimbAnim",
+  "parentId": "4655863",
+  "path": "ReplicatedStorage/Enemies/Invoker/Animate/climb/ClimbAnim",
+  "properties": [],
+  "referenceId": "4655864"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Part",
+  "name": "HumanoidRootPart",
+  "parentId": "4655630",
+  "path": "ReplicatedStorage/Enemies/Acolyte/HumanoidRootPart",
+  "properties": [],
+  "referenceId": "4655713"
+}

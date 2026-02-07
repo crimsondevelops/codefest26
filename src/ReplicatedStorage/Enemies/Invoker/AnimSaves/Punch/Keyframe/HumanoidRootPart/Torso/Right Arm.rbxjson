@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "Right Arm",
+  "parentId": "4655909",
+  "path": "ReplicatedStorage/Enemies/Invoker/AnimSaves/Punch/Keyframe/HumanoidRootPart/Torso/Right Arm",
+  "properties": [],
+  "referenceId": "4655911"
+}

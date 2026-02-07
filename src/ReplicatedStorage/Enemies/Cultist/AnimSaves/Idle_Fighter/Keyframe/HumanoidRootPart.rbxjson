@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "HumanoidRootPart",
+  "parentId": "4655784",
+  "path": "ReplicatedStorage/Enemies/Cultist/AnimSaves/Idle_Fighter/Keyframe/HumanoidRootPart",
+  "properties": [],
+  "referenceId": "4655785"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "FallAnim",
+  "parentId": "4655994",
+  "path": "ReplicatedStorage/Enemies/Tank/Animate/fall/FallAnim",
+  "properties": [],
+  "referenceId": "4655995"
+}

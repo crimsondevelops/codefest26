@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "SitAnim",
+  "parentId": "4655646",
+  "path": "ReplicatedStorage/Enemies/Acolyte/Animate/sit/SitAnim",
+  "properties": [],
+  "referenceId": "4655647"
+}

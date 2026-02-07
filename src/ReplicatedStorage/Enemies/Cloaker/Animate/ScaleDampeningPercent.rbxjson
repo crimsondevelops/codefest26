@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "ScaleDampeningPercent",
+  "parentId": "4656084",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Animate/ScaleDampeningPercent",
+  "properties": [],
+  "referenceId": "4656085"
+}

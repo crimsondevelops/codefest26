@@ -1,0 +1,8 @@
+{
+  "className": "Part",
+  "name": "HumanoidRootPart",
+  "parentId": "4656083",
+  "path": "ReplicatedStorage/Enemies/Cloaker/HumanoidRootPart",
+  "properties": [],
+  "referenceId": "4656159"
+}

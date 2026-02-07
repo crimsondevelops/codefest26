@@ -1,0 +1,8 @@
+{
+  "className": "KeyframeSequence",
+  "name": "Idle_Fighter",
+  "parentId": "4655890",
+  "path": "ReplicatedStorage/Enemies/Invoker/AnimSaves/Idle_Fighter",
+  "properties": [],
+  "referenceId": "4655891"
+}

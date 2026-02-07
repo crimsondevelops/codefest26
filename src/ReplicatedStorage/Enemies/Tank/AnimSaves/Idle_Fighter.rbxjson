@@ -1,0 +1,8 @@
+{
+  "className": "KeyframeSequence",
+  "name": "Idle_Fighter",
+  "parentId": "4656019",
+  "path": "ReplicatedStorage/Enemies/Tank/AnimSaves/Idle_Fighter",
+  "properties": [],
+  "referenceId": "4656020"
+}

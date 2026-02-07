@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Neck",
+  "parentId": "4655723",
+  "path": "ReplicatedStorage/Enemies/Acolyte/Torso/Neck",
+  "properties": [],
+  "referenceId": "4655736"
+}

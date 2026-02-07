@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "Right Arm",
+  "parentId": "4656132",
+  "path": "ReplicatedStorage/Enemies/Cloaker/AnimSaves/Punch/Keyframe/HumanoidRootPart/Torso/Right Arm",
+  "properties": [],
+  "referenceId": "4656134"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "JumpAnim",
+  "parentId": "4655872",
+  "path": "ReplicatedStorage/Enemies/Invoker/Animate/jump/JumpAnim",
+  "properties": [],
+  "referenceId": "4655873"
+}

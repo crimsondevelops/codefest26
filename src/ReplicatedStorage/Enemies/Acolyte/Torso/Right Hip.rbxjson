@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Right Hip",
+  "parentId": "4655723",
+  "path": "ReplicatedStorage/Enemies/Acolyte/Torso/Right Hip",
+  "properties": [],
+  "referenceId": "4655734"
+}

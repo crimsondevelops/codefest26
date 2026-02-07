@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "FallAnim",
+  "parentId": "4656088",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Animate/fall/FallAnim",
+  "properties": [],
+  "referenceId": "4656089"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "ToolNoneAnim",
+  "parentId": "4656007",
+  "path": "ReplicatedStorage/Enemies/Tank/Animate/toolnone/ToolNoneAnim",
+  "properties": [],
+  "referenceId": "4656008"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "ToolNoneAnim",
+  "parentId": "4656101",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Animate/toolnone/ToolNoneAnim",
+  "properties": [],
+  "referenceId": "4656102"
+}

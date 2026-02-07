@@ -1,0 +1,8 @@
+{
+  "className": "KeyframeSequence",
+  "name": "Idle_Fighter",
+  "parentId": "4656113",
+  "path": "ReplicatedStorage/Enemies/Cloaker/AnimSaves/Idle_Fighter",
+  "properties": [],
+  "referenceId": "4656114"
+}

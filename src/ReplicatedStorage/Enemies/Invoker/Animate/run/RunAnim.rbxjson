@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "RunAnim",
+  "parentId": "4655874",
+  "path": "ReplicatedStorage/Enemies/Invoker/Animate/run/RunAnim",
+  "properties": [],
+  "referenceId": "4655875"
+}

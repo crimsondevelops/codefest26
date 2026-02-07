@@ -1,0 +1,8 @@
+{
+  "className": "StringValue",
+  "name": "AvatarPartScaleType",
+  "parentId": "4656143",
+  "path": "ReplicatedStorage/Enemies/Cloaker/Accessory (MeshPartAccessory)/Handle/AvatarPartScaleType",
+  "properties": [],
+  "referenceId": "4656145"
+}

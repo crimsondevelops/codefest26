@@ -1,0 +1,8 @@
+{
+  "className": "KeyframeSequence",
+  "name": "Idle_Fighter",
+  "parentId": "4655782",
+  "path": "ReplicatedStorage/Enemies/Cultist/AnimSaves/Idle_Fighter",
+  "properties": [],
+  "referenceId": "4655783"
+}

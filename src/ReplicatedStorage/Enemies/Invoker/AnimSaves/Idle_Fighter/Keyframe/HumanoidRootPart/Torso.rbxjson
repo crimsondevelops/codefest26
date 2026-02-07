@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "Torso",
+  "parentId": "4655893",
+  "path": "ReplicatedStorage/Enemies/Invoker/AnimSaves/Idle_Fighter/Keyframe/HumanoidRootPart/Torso",
+  "properties": [],
+  "referenceId": "4655895"
+}

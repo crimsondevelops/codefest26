@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "SitAnim",
+  "parentId": "4655876",
+  "path": "ReplicatedStorage/Enemies/Invoker/Animate/sit/SitAnim",
+  "properties": [],
+  "referenceId": "4655877"
+}

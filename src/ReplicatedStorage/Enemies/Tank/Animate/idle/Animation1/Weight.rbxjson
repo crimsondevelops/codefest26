@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "Weight",
+  "parentId": "4655997",
+  "path": "ReplicatedStorage/Enemies/Tank/Animate/idle/Animation1/Weight",
+  "properties": [],
+  "referenceId": "4655998"
+}
