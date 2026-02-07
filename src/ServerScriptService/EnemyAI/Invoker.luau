@@ -1,5 +1,5 @@
 local module = {
-	Animation = "rbxassetid://72276828847771", -- Sh
+	Animation = "rbxassetid://72276828847771", -- Shoot
 	Cooldown = 4,
 	Damage = 30,
 	Type = "Offensive"

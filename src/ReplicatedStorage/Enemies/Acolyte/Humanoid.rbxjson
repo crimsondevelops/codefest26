@@ -1,8 +1,8 @@
 {
   "className": "Humanoid",
   "name": "Humanoid",
-  "parentId": "4655630",
+  "parentId": "15410",
   "path": "ReplicatedStorage/Enemies/Acolyte/Humanoid",
   "properties": [],
-  "referenceId": "4655652"
+  "referenceId": "11061"
 }

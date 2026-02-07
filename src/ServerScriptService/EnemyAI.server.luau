@@ -160,7 +160,7 @@ local function runEnemy(enemy)
 			animTrack:Play()
 		end
 
-		local amount = math.random(3,4)
+		local amount = 2
 		for i = 1, amount do
 			local offset = Vector3.new(math.random(-10,10),0,math.random(-10,10))
 			spawnEnemy("Cultist", hrp.Position + offset)

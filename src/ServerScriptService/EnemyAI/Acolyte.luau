@@ -1,6 +1,6 @@
 local module = {
-	Animation = "rbxassetid://72276828847771", -- S
-	Cooldown = 10,
+	Animation = "rbxassetid://72276828847771", -- Summon
+	Cooldown = 999,
 	Type = "Defensive",
 	Class = "Ranged"
 }
