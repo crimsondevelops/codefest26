@@ -5,9 +5,10 @@ local enemyFolder = ReplicatedStorage:WaitForChild("Enemies")
 local spawnFolder = workspace:WaitForChild("EnemySpawns")
 local activeEnemies = workspace:WaitForChild("Enemies")
 
-local spawnDelay = 3
+local spawnDelay = 1
 local maxPerSpawn = 3
 local spawnRadius = 120
+local maxNearPlayer = 2
 
 local function getEnemyList()
 	local list = {}
@@ -69,9 +70,10 @@ task.spawn(function()
 			local player, dist = getClosestPlayer(spawnPart.Position)
 
 			if player and dist <= spawnRadius then
-				local nearby = countNearbyEnemies(spawnPart.Position, 60)
+				local nearbySpawn = countNearbyEnemies(spawnPart.Position, 60)
+				local nearbyPlayer = countNearbyEnemies(player.HumanoidRootPart.Position, spawnRadius)
 
-				if nearby < maxPerSpawn then
+				if nearbySpawn < maxPerSpawn and nearbyPlayer < maxNearPlayer then
 					spawnEnemyAt(spawnPart)
 					task.wait(0.5)
 				end

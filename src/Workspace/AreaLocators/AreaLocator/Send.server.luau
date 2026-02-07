@@ -3,7 +3,7 @@ local Events = RS:WaitForChild("Events")
 local zoneEvent = Events:WaitForChild("ZoneEvent")
 
 script.Parent.Touched:Connect(function(hit)
-	if hit.Parent:FindFirstChild("Humanoid") then
+	if game.Players:GetPlayerFromCharacter(hit.Parent) then
 		script.Parent.CanTouch = false
 		zoneEvent:FireClient(game.Players:GetPlayerFromCharacter(hit.Parent), "Namerto Valley")
 	end

@@ -1,8 +1,8 @@
 {
   "className": "BillboardGui",
   "name": "LightBillboard",
-  "parentId": "15283",
+  "parentId": "15615",
   "path": "Workspace/Greenery Pack/VolumetricLight/LightBillboard",
   "properties": [],
-  "referenceId": "9545"
+  "referenceId": "9711"
 }

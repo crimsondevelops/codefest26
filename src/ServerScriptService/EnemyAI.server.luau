@@ -142,7 +142,9 @@ local function runEnemy(enemy)
 			if result and result.Instance then
 				local h = result.Instance.Parent:FindFirstChild("Humanoid")
 				if h then
-					h:TakeDamage(data.Damage or 15)
+					if math.random(1, 2) == 2 then
+						h:TakeDamage(data.Damage)
+					end
 				end
 			end
 		end
