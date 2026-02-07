@@ -88,6 +88,7 @@ local function runEnemy(enemy)
 		cooldown = true
 
 		if animTrack then
+			animTrack.Looped = false
 			animTrack:Play()
 		end
 
@@ -95,6 +96,7 @@ local function runEnemy(enemy)
 		local conn
 
 		conn = hitbox.Touched:Connect(function(hit)
+			if not hit.Parent then conn:Disconnect() return end
 			local h = hit.Parent:FindFirstChild("Humanoid")
 			if h and hit.Parent ~= enemy and Players:GetPlayerFromCharacter(hit.Parent) then
 				h:TakeDamage(data.Damage or 10)
@@ -117,6 +119,7 @@ local function runEnemy(enemy)
 		cooldown = true
 
 		if animTrack then
+			animTrack.Looped = false
 			animTrack:Play()
 		end
 

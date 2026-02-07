@@ -5,7 +5,7 @@ local enemyFolder = ReplicatedStorage:WaitForChild("Enemies")
 local spawnFolder = workspace:WaitForChild("EnemySpawns")
 local activeEnemies = workspace:WaitForChild("Enemies")
 
-local spawnDelay = 1
+local spawnDelay = 14
 local maxPerSpawn = 3
 local spawnRadius = 120
 local maxNearPlayer = 2

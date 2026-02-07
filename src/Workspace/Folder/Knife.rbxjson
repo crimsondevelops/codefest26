@@ -1,0 +1,11 @@
+{
+  "className": "Model",
+  "name": "Knife",
+  "parentId": "10814",
+  "path": "Workspace/Folder/Knife",
+  "properties": [],
+  "referenceId": "14212",
+  "tags": [
+    "ITEM"
+  ]
+}
