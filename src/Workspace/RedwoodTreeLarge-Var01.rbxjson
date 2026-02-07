@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "Workspace/RedwoodTreeLarge-Var01"
+    }
+  },
+  "className": "Model",
+  "name": "RedwoodTreeLarge-Var01",
+  "parentId": "13",
+  "path": "Workspace/RedwoodTreeLarge-Var01",
+  "properties": [],
+  "referenceId": "584474",
+  "tags": [
+    "_BrushtoolBrushed"
+  ]
+}

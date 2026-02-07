@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "StarterGui/MainGui"
+    }
+  },
+  "className": "ScreenGui",
+  "name": "MainGui",
+  "parentId": "7058",
+  "path": "StarterGui/MainGui",
+  "properties": [],
+  "referenceId": "4875066"
+}

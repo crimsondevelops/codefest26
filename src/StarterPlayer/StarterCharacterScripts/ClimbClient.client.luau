@@ -63,8 +63,9 @@ function freezeChar(bool)
 	else
 		hum:ChangeState(Enum.HumanoidStateType.Freefall)
 		hrp.Anchored = false
-		task.
-		hrp:ApplyImpulse(-hrp.CFrame.LookVector * 300)
+		task.delay(0.05, function()
+			hrp:ApplyImpulse(-hrp.CFrame.LookVector * 550)
+		end)
 	end
 end
 
