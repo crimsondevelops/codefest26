@@ -1,3 +1,8 @@
 {
-  "properties": {}
+  "className": "LocalScript",
+  "name": "ClimbClient",
+  "parentId": "9213",
+  "path": "StarterPlayer/StarterCharacterScripts/ClimbClient",
+  "properties": [],
+  "referenceId": "2724297"
 }

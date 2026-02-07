@@ -1,0 +1,8 @@
+{
+  "className": "BindableEvent",
+  "name": "ClimbFallBind",
+  "parentId": "2724676",
+  "path": "ReplicatedStorage/Events/ClimbFallBind",
+  "properties": [],
+  "referenceId": "2724675"
+}

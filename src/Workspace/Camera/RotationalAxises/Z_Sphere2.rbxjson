@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "DefaultSize": {
+      "type": "Vector3",
+      "value": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    }
+  },
+  "className": "Part",
+  "name": "Z_Sphere2",
+  "parentId": "2717305",
+  "path": "Workspace/Camera/RotationalAxises/Z_Sphere2",
+  "properties": [],
+  "referenceId": "2717318"
+}

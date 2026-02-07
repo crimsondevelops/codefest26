@@ -1,0 +1,8 @@
+{
+  "className": "LocalScript",
+  "name": "StaminaClient",
+  "parentId": "9213",
+  "path": "StarterPlayer/StarterCharacterScripts/StaminaClient",
+  "properties": [],
+  "referenceId": "2724298"
+}

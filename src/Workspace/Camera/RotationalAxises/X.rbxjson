@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "DefaultSize": {
+      "type": "Vector3",
+      "value": {
+        "x": 0.08333399891853333,
+        "y": 4.949999809265137,
+        "z": 4.949999809265137
+      }
+    }
+  },
+  "className": "MeshPart",
+  "name": "X",
+  "parentId": "2717305",
+  "path": "Workspace/Camera/RotationalAxises/X",
+  "properties": [],
+  "referenceId": "2717354"
+}

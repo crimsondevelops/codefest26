@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "LeftClimb",
+  "parentId": "2724297",
+  "path": "StarterPlayer/StarterCharacterScripts/ClimbClient/LeftClimb",
+  "properties": [],
+  "referenceId": "2724289"
+}

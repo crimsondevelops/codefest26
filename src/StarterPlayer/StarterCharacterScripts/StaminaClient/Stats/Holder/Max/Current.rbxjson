@@ -1,0 +1,8 @@
+{
+  "className": "Frame",
+  "name": "Current",
+  "parentId": "2724295",
+  "path": "StarterPlayer/StarterCharacterScripts/StaminaClient/Stats/Holder/Max/Current",
+  "properties": [],
+  "referenceId": "2724296"
+}

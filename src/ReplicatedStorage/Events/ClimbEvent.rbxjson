@@ -1,0 +1,8 @@
+{
+  "className": "UnreliableRemoteEvent",
+  "name": "ClimbEvent",
+  "parentId": "2724676",
+  "path": "ReplicatedStorage/Events/ClimbEvent",
+  "properties": [],
+  "referenceId": "2724677"
+}

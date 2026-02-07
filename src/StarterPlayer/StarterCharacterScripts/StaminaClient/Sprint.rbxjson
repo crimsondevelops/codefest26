@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "Sprint",
+  "parentId": "2724298",
+  "path": "StarterPlayer/StarterCharacterScripts/StaminaClient/Sprint",
+  "properties": [],
+  "referenceId": "2724291"
+}

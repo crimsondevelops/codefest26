@@ -1,0 +1,8 @@
+{
+  "className": "BillboardGui",
+  "name": "Stats",
+  "parentId": "2724298",
+  "path": "StarterPlayer/StarterCharacterScripts/StaminaClient/Stats",
+  "properties": [],
+  "referenceId": "2724293"
+}

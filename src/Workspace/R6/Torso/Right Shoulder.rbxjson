@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Right Shoulder",
+  "parentId": "2889005",
+  "path": "Workspace/R6/Torso/Right Shoulder",
+  "properties": [],
+  "referenceId": "2889014"
+}

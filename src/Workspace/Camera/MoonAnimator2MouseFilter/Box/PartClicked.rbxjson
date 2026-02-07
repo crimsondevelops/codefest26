@@ -1,0 +1,8 @@
+{
+  "className": "BindableEvent",
+  "name": "PartClicked",
+  "parentId": "2892373",
+  "path": "Workspace/Camera/MoonAnimator2MouseFilter/Box/PartClicked",
+  "properties": [],
+  "referenceId": "2892374"
+}

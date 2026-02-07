@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "LandAnim",
+  "parentId": "2724299",
+  "path": "ServerScriptService/FallServer/LandAnim",
+  "properties": [],
+  "referenceId": "2724292"
+}
