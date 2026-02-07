@@ -1,8 +1,3 @@
 {
-  "className": "LocalScript",
-  "name": "LocalScript",
-  "parentId": "9213",
-  "path": "StarterPlayer/StarterCharacterScripts/LocalScript",
-  "properties": [],
-  "referenceId": "425146"
+  "properties": {}
 }
