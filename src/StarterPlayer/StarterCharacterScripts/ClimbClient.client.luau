@@ -1,6 +1,12 @@
 local UIS = game:GetService("UserInputService")
 local RuS = game:GetService("RunService")
 local TS = game:GetService("TweenService")
+local RS = game:GetService("ReplicatedStorage")
+
+local Events = RS:WaitForChild("Events")
+local climbEvent = Events:WaitForChild("ClimbEvent")
+local climbBind = Events:WaitForChild("ClimbBind")
+local fallBind = Events:WaitForChild("ClimbFallBind")
 
 local climbingPart = nil
 local cooldown = false
@@ -14,7 +20,7 @@ local keyHolds = {
 	["D"] = false,
 }
 
-local climbFac = 2.5
+local climbFac = 1.5
 
 if not game:IsLoaded() then game.Loaded:Wait() end
 
@@ -22,25 +28,92 @@ local player = game.Players.LocalPlayer
 local char = player.Character or player.CharacterAdded:Wait()
 local hrp:BasePart = char:WaitForChild("HumanoidRootPart")
 local hum:Humanoid = char:WaitForChild("Humanoid")
+local head:BasePart = char:WaitForChild("Head")
+
+local upClimb = hum:LoadAnimation(script.UpClimb)
+local downClimb = hum:LoadAnimation(script.DownClimb)
+local leftClimb = hum:LoadAnimation(script.LeftClimb)
+local rightClimb = hum:LoadAnimation(script.RightClimb)
+
+local old_dir = 1
+
+local hitbox = Instance.new("Part", workspace)
+hitbox.Name = "Hitbox"
+hitbox.CanCollide = false
+hitbox.Massless = true
+hitbox.Anchored = false
+hitbox.Transparency = 1
+hitbox.Size = Vector3.new(3,3,3)
+hitbox.CFrame = head.CFrame * CFrame.new(0, .5, -.75)
+
+local weld = Instance.new("WeldConstraint", head)
+weld.Part0 = head
+weld.Part1 = hitbox
 
 function freezeChar(bool)
 	cooldown = true
 	task.delay(0.25, function()
 		cooldown = false
 	end)
-
+	
+	climbBind:Fire(bool, false)
 	if bool then
-		hum:ChangeState(Enum.HumanoidStateType.None)
+		hum:ChangeState(Enum.HumanoidStateType.Running)
 		hrp.Anchored = true
 	else
 		hum:ChangeState(Enum.HumanoidStateType.Freefall)
 		hrp.Anchored = false
+		task.
+		hrp:ApplyImpulse(-hrp.CFrame.LookVector * 300)
 	end
 end
 
+fallBind.Event:Connect(function()
+	climbing = false
+	climbingPart = false
+	freezeChar(false)
+end)
+
+hum.StateChanged:Connect(function(old, new)
+	if new == Enum.HumanoidStateType.Climbing then
+		hum:SetStateEnabled(Enum.HumanoidStateType.Climbing, false)
+	end
+end)
+
 RuS.Heartbeat:Connect(function()
 	if climbing then
+		
+		local hit = hitbox:GetTouchingParts()
+		for i, t in pairs(hit) do
+			if t:HasTag("FLOOR") then
+				climbing = false
+				climbDeb = true
+				task.delay(0.5, function()
+					climbDeb = false
+				end)
 
+				freezeChar(false)
+			end
+		end
+		
+		for i, v in pairs(char:GetDescendants()) do
+			if v:IsA("BasePart") then
+				local touching = v:GetTouchingParts()
+				
+				for m, r in pairs(touching) do
+					if r:HasTag("FLOOR") then
+						climbing = false
+						climbDeb = true
+						task.delay(0.5, function()
+							climbDeb = false
+						end)
+						
+						freezeChar(false)
+					end
+				end
+			end
+		end
+		
 		if not climbDeb then
 			local offset = CFrame.new(0, 0, 0)
 
@@ -59,7 +132,7 @@ RuS.Heartbeat:Connect(function()
 
 			local raycastParams = RaycastParams.new()
 			raycastParams.FilterType = Enum.RaycastFilterType.Include
-			raycastParams.FilterDescendantsInstances = {workspace.Walls}
+			raycastParams.FilterDescendantsInstances = workspace:GetDescendants()
 
 			local result = workspace:Raycast(hrp.Position, hrp.CFrame.LookVector * 5, raycastParams)
 
@@ -68,37 +141,99 @@ RuS.Heartbeat:Connect(function()
 				task.delay(0.05, function()
 					climbDeb = false
 				end)
-
-				if result and result.Instance then
+				
+				if result and result.Instance and result.Instance:HasTag("WALL") then
 					climbingPart = result.Instance
 
 					local normal = result.Normal
-					local diffZ = (hrp.CFrame:PointToObjectSpace(climbingPart.Position).Z) + 1
+					local hitPos = result.Position
 
 					local combinedOffset = offset
-					combinedOffset = combinedOffset * CFrame.new(0, 0, diffZ)
 
-					local hitPos = result.Position
-					local right = climbingPart.CFrame.RightVector -- x axis direction
-					local up = climbingPart.CFrame.UpVector -- y axis direction
-					local forward = right:Cross(up) -- basically multiplies the right vector with upvector
+					local up = Vector3.new(0, 1, 0)
+					local right = up:Cross(normal).Unit
+					local forward = normal
 
-					local pos = hitPos + forward + (right * combinedOffset.X) + (up * combinedOffset.Y)
-					local targetCF = CFrame.fromMatrix(pos, right, up)
+					if right.Magnitude < 0.01 then
+						right = Vector3.new(1, 0, 0)
+					end
 
-					local tweenInfo = TweenInfo.new(.25, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-					local tween = TS:Create(hrp, tweenInfo, {CFrame = targetCF})
-					tween:Play()
+					local realUp = normal:Cross(right).Unit
 
-					task.spawn(function()
-						while tween.PlaybackState == Enum.PlaybackState.Playing do
-							if not climbing then
-								tween:Pause()
-								tween:Destroy()
-							end
-							task.wait()
+					local pos = hitPos + (right * combinedOffset.X) + (realUp * combinedOffset.Y) + (forward * 1)
+
+					local targetCF = CFrame.fromMatrix(pos, right, realUp, forward)
+					
+					local x, y = offset.X, offset.Y
+					
+					local dir
+					if (targetCF.Position - hrp.Position).Magnitude < (climbFac - 0.5) then
+						dir = old_dir
+					else
+						dir =
+							(y > 0 and 1) or
+							(x > 0 and 2) or
+							(x < 0 and 3) or
+							(y < 0 and 4) or
+							1
+						old_dir = dir
+					end
+					
+					local track = upClimb
+					if dir == 1 then
+						track = upClimb
+					elseif dir == 2 then
+						track = rightClimb
+					elseif dir == 3 then
+						track = leftClimb
+					else
+						track = downClimb
+					end
+					
+					if upClimb.IsPlaying then
+						if upClimb ~= track then
+							upClimb:Stop()
 						end
-					end)
+					end
+					if rightClimb.IsPlaying then
+						if rightClimb ~= track then
+							rightClimb:Stop()
+						end
+					end
+					if leftClimb.IsPlaying then
+						if leftClimb ~= track then
+							leftClimb:Stop()
+						end
+					end
+					if downClimb.IsPlaying then
+						if downClimb ~= track then
+							downClimb:Stop()
+						end
+					end
+					
+					if (targetCF.Position - hrp.Position).Magnitude < (climbFac - 0.5) then
+						climbBind:Fire(false, true)
+						track:AdjustSpeed(0)
+					else
+						climbBind:Fire(true, false)
+						if upClimb.IsPlaying or downClimb.IsPlaying then
+							track:AdjustSpeed(0.5)
+						else
+							track:AdjustSpeed(1)
+						end
+						
+						if rightClimb.IsPlaying then
+							track:AdjustSpeed(-0.5)
+						elseif leftClimb.IsPlaying then
+							track:AdjustSpeed(0.5)
+						end
+					end
+					
+					if not track.IsPlaying then
+						track:Play()
+					end
+					
+					climbEvent:FireServer(targetCF)
 				end
 			elseif not result or not result.Instance then
 				climbing = false
@@ -106,42 +241,35 @@ RuS.Heartbeat:Connect(function()
 				freezeChar(false)
 			end
 		end
+	else
+		downClimb:Stop()
+		rightClimb:Stop()
+		leftClimb:Stop()
+		upClimb:Stop()
 	end
 end)
 
 UIS.InputBegan:Connect(function(input, gpe)
 	if gpe then return end
-
 	if input.KeyCode == Enum.KeyCode.Space then
-		for i, v in pairs(char:GetDescendants()) do
-			if v:IsA("BasePart") then
-				local touching = v:GetTouchingParts()
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterType = Enum.RaycastFilterType.Include
+		raycastParams.FilterDescendantsInstances = workspace:GetDescendants()
 
-				for m, r in pairs(touching) do
+		local result = workspace:Raycast(hrp.Position, hrp.CFrame.LookVector * 5, raycastParams)
+		
+		if result and result.Instance and result.Instance:HasTag("WALL") then
+			if not cooldown then
+				if climbing then
+					freezeChar(false)
+					
+					climbingPart = nil
+					climbing = false
+				elseif not climbing then
+					freezeChar(true)
 
-					if r:IsA("BasePart") then
-
-						if r:HasTag("WALL") then
-
-							if not climbingPart then
-								if not cooldown then
-									if climbing then
-										freezeChar(false)
-
-										climbingPart = nil
-										climbing = false
-									elseif not climbing then
-										freezeChar(true)
-
-										climbingPart = r
-										climbing = true
-									end
-								end
-							end
-						end
-
-					end
-
+					climbingPart = result.Instance
+					climbing = true
 				end
 			end
 		end
