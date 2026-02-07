@@ -1,8 +1,0 @@
-{
-  "className": "BillboardGui",
-  "name": "LightBillboard",
-  "parentId": "405282",
-  "path": "Workspace/Model/VolumetricLight/LightBillboard",
-  "properties": [],
-  "referenceId": "404188"
-}

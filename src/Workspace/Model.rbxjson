@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "value": "Hill"
+    }
+  },
+  "className": "UnionOperation",
+  "name": "Model",
+  "parentId": "13",
+  "path": "Workspace/Model",
+  "properties": [],
+  "referenceId": "478724"
+}
