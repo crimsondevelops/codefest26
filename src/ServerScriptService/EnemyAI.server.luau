@@ -96,7 +96,7 @@ local function runEnemy(enemy)
 
 		conn = hitbox.Touched:Connect(function(hit)
 			local h = hit.Parent:FindFirstChild("Humanoid")
-			if h and hit.Parent ~= enemy then
+			if h and hit.Parent ~= enemy and Players:GetPlayerFromCharacter(hit.Parent) then
 				h:TakeDamage(data.Damage or 10)
 				conn:Disconnect()
 				hitbox:Destroy()
@@ -141,7 +141,7 @@ local function runEnemy(enemy)
 
 			if result and result.Instance then
 				local h = result.Instance.Parent:FindFirstChild("Humanoid")
-				if h then
+				if h and Players:GetPlayerFromCharacter(result.Instance.Parent) then
 					h:TakeDamage(data.Damage)
 				end
 			end
@@ -188,12 +188,29 @@ local function runEnemy(enemy)
 			end
 
 			if data.Type == "Defensive" then
-				if dist < 40 then
-					local flee = (hrp.Position - target.HumanoidRootPart.Position).Unit * 25
-					hum:MoveTo(hrp.Position + flee)
+				local allies = {}
+				for _, e in pairs(workspace.Enemies:GetChildren()) do
+					if e ~= enemy and e:FindFirstChild("HumanoidRootPart") and e:FindFirstChild("Humanoid") and e.Humanoid.Health > 0 then
+						table.insert(allies, e)
+					end
+				end
+
+				local allyCenter = hrp.Position
+				if #allies > 0 then
+					local sum = Vector3.zero
+					for _, a in pairs(allies) do
+						sum += a.HumanoidRootPart.Position
+					end
+					allyCenter = sum / #allies
+				end
+
+				local playerPos = target.HumanoidRootPart.Position
+				local dir = (playerPos - allyCenter).Unit
+				local desired = playerPos - dir * 20
+
+				hum:MoveTo(desired)
+				if dist < 60 then
 					summon(target)
-				else
-					hum:MoveTo(target.HumanoidRootPart.Position)
 				end
 			end
 
@@ -214,26 +231,26 @@ local function runEnemy(enemy)
 				end
 			end
 		end
-		
+
 		if hum.Health <= 0 then
 			pcall(function()
 				for index,joint in pairs(script.Parent:GetDescendants()) do
-						if joint:IsA("Motor6D") then
-							local socket = Instance.new("BallSocketConstraint")
-							local a1 = Instance.new("Attachment")
-							local a2 = Instance.new("Attachment")
-							a1.Parent = joint.Part0
-							a2.Parent = joint.Part1
-							socket.Parent = joint.Parent
-							socket.Attachment0 = a1
-							socket.Attachment1 = a2
-							a1.CFrame = joint.C0
-							a2.CFrame = joint.C1
-							socket.LimitsEnabled = true
-							socket.TwistLimitsEnabled = true
-							joint:Destroy()
-						end
+					if joint:IsA("Motor6D") then
+						local socket = Instance.new("BallSocketConstraint")
+						local a1 = Instance.new("Attachment")
+						local a2 = Instance.new("Attachment")
+						a1.Parent = joint.Part0
+						a2.Parent = joint.Part1
+						socket.Parent = joint.Parent
+						socket.Attachment0 = a1
+						socket.Attachment1 = a2
+						a1.CFrame = joint.C0
+						a2.CFrame = joint.C1
+						socket.LimitsEnabled = true
+						socket.TwistLimitsEnabled = true
+						joint:Destroy()
 					end
+				end
 			end)
 		end
 	end)

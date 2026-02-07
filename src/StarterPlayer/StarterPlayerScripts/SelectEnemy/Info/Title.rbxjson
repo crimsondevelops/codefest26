@@ -1,0 +1,8 @@
+{
+  "className": "TextLabel",
+  "name": "Title",
+  "parentId": "10333724",
+  "path": "StarterPlayer/StarterPlayerScripts/SelectEnemy/Info/Title",
+  "properties": [],
+  "referenceId": "10333725"
+}

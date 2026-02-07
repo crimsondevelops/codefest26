@@ -1,0 +1,8 @@
+{
+  "className": "TextLabel",
+  "name": "Health",
+  "parentId": "10333724",
+  "path": "StarterPlayer/StarterPlayerScripts/SelectEnemy/Info/Health",
+  "properties": [],
+  "referenceId": "10333726"
+}
