@@ -1,3 +1,8 @@
 {
-  "properties": {}
+  "className": "Script",
+  "name": "Script",
+  "parentId": "3500683",
+  "path": "Workspace/AreaLocator/Script",
+  "properties": [],
+  "referenceId": "3500684"
 }
