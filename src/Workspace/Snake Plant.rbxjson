@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "Workspace/Snake Plant"
+    }
+  },
+  "className": "MeshPart",
+  "name": "Snake Plant",
+  "parentId": "13",
+  "path": "Workspace/Snake Plant",
+  "properties": [],
+  "referenceId": "2500612"
+}

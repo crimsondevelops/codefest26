@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Neck",
+  "parentId": "483350",
+  "path": "Workspace/Rig/Rig2/Neck",
+  "properties": [],
+  "referenceId": "483364"
+}

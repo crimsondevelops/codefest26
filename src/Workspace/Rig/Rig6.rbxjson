@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "Workspace/Rig/Rig6"
+    }
+  },
+  "className": "Part",
+  "name": "Rig6",
+  "parentId": "479562",
+  "path": "Workspace/Rig/Rig6",
+  "properties": [],
+  "referenceId": "2342673"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Left Hip",
+  "parentId": "483350",
+  "path": "Workspace/Rig/Rig2/Left Hip",
+  "properties": [],
+  "referenceId": "483363"
+}
