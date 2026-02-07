@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "Workspace/Model/Model/GardenBedsSpiral"
+    }
+  },
+  "className": "Model",
+  "name": "GardenBedsSpiral",
+  "parentId": "404799",
+  "path": "Workspace/Model/Model/GardenBedsSpiral",
+  "properties": [],
+  "referenceId": "406049"
+}

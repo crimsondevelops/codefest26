@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "OuterLeaves",
+  "parentId": "404801",
+  "path": "Workspace/Model/MapleLeafTreeVar0/OuterLeaves",
+  "properties": [],
+  "referenceId": "404222",
+  "tags": [
+    "WindShake2"
+  ]
+}

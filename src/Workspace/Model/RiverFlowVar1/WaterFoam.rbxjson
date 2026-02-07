@@ -1,0 +1,8 @@
+{
+  "className": "Beam",
+  "name": "WaterFoam",
+  "parentId": "404821",
+  "path": "Workspace/Model/RiverFlowVar1/WaterFoam",
+  "properties": [],
+  "referenceId": "404187"
+}
