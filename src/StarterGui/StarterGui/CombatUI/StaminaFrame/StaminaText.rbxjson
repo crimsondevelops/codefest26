@@ -1,0 +1,8 @@
+{
+  "className": "TextLabel",
+  "name": "StaminaText",
+  "parentId": "632538",
+  "path": "StarterGui/StarterGui/CombatUI/StaminaFrame/StaminaText",
+  "properties": [],
+  "referenceId": "640750"
+}

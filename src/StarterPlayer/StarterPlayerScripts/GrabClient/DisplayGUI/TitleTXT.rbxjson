@@ -1,8 +1,0 @@
-{
-  "className": "TextLabel",
-  "name": "TitleTXT",
-  "parentId": "9101818",
-  "path": "StarterPlayer/StarterPlayerScripts/GrabClient/DisplayGUI/TitleTXT",
-  "properties": [],
-  "referenceId": "9101821"
-}

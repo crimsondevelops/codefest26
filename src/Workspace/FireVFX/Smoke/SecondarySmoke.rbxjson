@@ -1,8 +1,8 @@
 {
   "className": "Attachment",
   "name": "SecondarySmoke",
-  "parentId": "734281",
+  "parentId": "1692757",
   "path": "Workspace/FireVFX/Smoke/SecondarySmoke",
   "properties": [],
-  "referenceId": "734283"
+  "referenceId": "1692759"
 }

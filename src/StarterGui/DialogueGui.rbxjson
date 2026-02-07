@@ -1,0 +1,8 @@
+{
+  "className": "ScreenGui",
+  "name": "DialogueGui",
+  "parentId": "7058",
+  "path": "StarterGui/DialogueGui",
+  "properties": [],
+  "referenceId": "21295755"
+}

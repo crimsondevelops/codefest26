@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Neck",
+  "parentId": "25356071",
+  "path": "ServerStorage/Rhino/Torso/Neck",
+  "properties": [],
+  "referenceId": "25356084"
+}

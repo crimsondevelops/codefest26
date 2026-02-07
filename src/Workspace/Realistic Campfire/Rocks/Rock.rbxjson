@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Rock",
-  "parentId": "740201",
+  "parentId": "1692782",
   "path": "Workspace/Realistic Campfire/Rocks/Rock",
   "properties": [],
-  "referenceId": "740179"
+  "referenceId": "1692761"
 }

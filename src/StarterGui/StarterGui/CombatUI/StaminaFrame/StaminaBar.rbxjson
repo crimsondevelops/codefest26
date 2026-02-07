@@ -1,0 +1,8 @@
+{
+  "className": "Frame",
+  "name": "StaminaBar",
+  "parentId": "632538",
+  "path": "StarterGui/StarterGui/CombatUI/StaminaFrame/StaminaBar",
+  "properties": [],
+  "referenceId": "632539"
+}

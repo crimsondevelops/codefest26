@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Left Hip",
+  "parentId": "21297753",
+  "path": "Workspace/NPCs/Ross/Torso/Left Hip",
+  "properties": [],
+  "referenceId": "21297748"
+}

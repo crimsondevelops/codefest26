@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Stick",
-  "parentId": "740206",
+  "parentId": "1692787",
   "path": "Workspace/Realistic Campfire/Sticks/Model/Model/Stick",
   "properties": [],
-  "referenceId": "740191"
+  "referenceId": "1692767"
 }

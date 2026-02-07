@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Left Hip",
+  "parentId": "25356071",
+  "path": "ServerStorage/Rhino/Torso/Left Hip",
+  "properties": [],
+  "referenceId": "25356083"
+}

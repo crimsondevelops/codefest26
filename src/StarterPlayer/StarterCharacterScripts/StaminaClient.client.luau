@@ -22,7 +22,7 @@ track.Priority = Enum.AnimationPriority.Movement
 
 local stamina = 100
 local walkSpeed = 12
-local sprintSpeed = 3
+local sprintSpeed = 34
 
 local sprintHold = false
 local sprinting = false
@@ -34,16 +34,20 @@ local climbPaused = false
 local refresh = 2
 local drain = 20
 
-local statsGui = script:WaitForChild("Stats")
-local holder = statsGui:WaitForChild("Holder")
+local staminaGui = script:WaitForChild("Stamina")
+local holder = staminaGui:WaitForChild("Holder")
 local max = holder:WaitForChild("Max")
 local current = max:WaitForChild("Current")
 
+local healthGui = script:WaitForChild("Health")
+
 if char then
-	statsGui.Parent = char
+	staminaGui.Parent = char
+	healthGui.Parent = char
 else
 	player.CharacterAdded:Wait()
-	statsGui.Parent = char
+	staminaGui.Parent = char
+	healthGui.Parent = char
 end
 
 local function update()
@@ -156,12 +160,22 @@ RuS.Heartbeat:Connect(function(dt)
 	end
 	
 	if stamina < 100 then
-		statsGui.Enabled = true
+		staminaGui.Enabled = true
 	else
-		statsGui.Enabled = false
+		staminaGui.Enabled = false
 	end
 	
 	if sprinting and climbing then
 		sprint(false)
 	end
+	
+	-- health stuff
+	if hum.Health < 100 then
+		healthGui.Enabled = true
+	else
+		healthGui.Enabled = false
+	end
+	
+	local diff = (100 - hum.Health) / 100
+	healthGui.Holder.Max.Current.Position = UDim2.new(0, 0, diff, 0)
 end)

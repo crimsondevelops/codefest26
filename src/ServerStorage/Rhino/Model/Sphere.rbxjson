@@ -1,0 +1,8 @@
+{
+  "className": "MeshPart",
+  "name": "Sphere",
+  "parentId": "25358606",
+  "path": "ServerStorage/Rhino/Model/Sphere",
+  "properties": [],
+  "referenceId": "25358605"
+}

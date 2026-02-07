@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Right Shoulder",
+  "parentId": "21297753",
+  "path": "Workspace/NPCs/Ross/Torso/Right Shoulder",
+  "properties": [],
+  "referenceId": "21297745"
+}

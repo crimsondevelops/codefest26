@@ -1,8 +1,8 @@
 {
   "className": "ParticleEmitter",
   "name": "ParticleEmitter",
-  "parentId": "734283",
+  "parentId": "1692759",
   "path": "Workspace/FireVFX/Smoke/SecondarySmoke/ParticleEmitter",
   "properties": [],
-  "referenceId": "734290"
+  "referenceId": "1692806"
 }

@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "LargeBoulder01",
+  "parentId": "635538",
+  "path": "Workspace/LargeBoulder_Var01/LargeBoulder01",
+  "properties": [],
+  "referenceId": "635539",
+  "tags": [
+    "WALL"
+  ]
+}

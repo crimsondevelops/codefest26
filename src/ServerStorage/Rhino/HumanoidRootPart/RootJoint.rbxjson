@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "RootJoint",
+  "parentId": "25356108",
+  "path": "ServerStorage/Rhino/HumanoidRootPart/RootJoint",
+  "properties": [],
+  "referenceId": "25356110"
+}

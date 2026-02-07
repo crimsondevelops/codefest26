@@ -1,8 +1,0 @@
-{
-  "className": "BillboardGui",
-  "name": "DisplayGUI",
-  "parentId": "9101820",
-  "path": "StarterPlayer/StarterPlayerScripts/GrabClient/DisplayGUI",
-  "properties": [],
-  "referenceId": "9101818"
-}

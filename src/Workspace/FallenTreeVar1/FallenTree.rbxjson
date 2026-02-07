@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "FallenTree",
+  "parentId": "701166",
+  "path": "Workspace/FallenTreeVar1/FallenTree",
+  "properties": [],
+  "referenceId": "701165",
+  "tags": [
+    "WALL"
+  ]
+}
