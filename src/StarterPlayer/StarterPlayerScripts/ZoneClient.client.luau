@@ -15,7 +15,7 @@ local title = areaF:WaitForChild("Title")
 zoneEvent.OnClientEvent:Connect(function(name)
 	local ross = workspace.NPCs.Ross
 	if ross.HumanoidRootPart:FindFirstChild("Beam") then
-		ross.HumanoidRootPart.Beam:D
+		ross.HumanoidRootPart.Beam:Destroy()
 	end
 	
 	areaF.Visible = true

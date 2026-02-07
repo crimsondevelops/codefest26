@@ -1,4 +1,4 @@
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RS = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
 function createHitbox(char, size, collision, anchor, name, massless, transparency)
@@ -48,7 +48,7 @@ local function getClosestTarget(hrp, range)
 end
 
 local function spawnEnemy(name, position)
-	local template = ReplicatedStorage.Enemies:FindFirstChild(name)
+	local template = RS.Enemies:FindFirstChild(name)
 	if not template then return end
 	local clone = template:Clone()
 	clone:PivotTo(CFrame.new(position))
@@ -128,8 +128,8 @@ local function runEnemy(enemy)
 				handle.Fire:Play()
 			end
 
-			if handle:FindFirstChild("Muzzle") and handle.Muzzle:FindFirstChild("Emitter") then
-				handle.Muzzle.Emitter:Emit(1)
+			if handle:FindFirstChild("Muzzle") and handle.Muzzle:FindFirstChild("Effect") then
+				handle.Muzzle.Effect:Emit(1)
 			end
 
 			local rayParams = RaycastParams.new()
@@ -181,6 +181,19 @@ local function runEnemy(enemy)
 			task.wait(0.2)
 
 			local target, dist = getClosestTarget(hrp, 80)
+
+			if target and enemy.Name == "Invoker" then
+				local gyro = hrp:FindFirstChild("InvokerGyro")
+				if not gyro then
+					gyro = Instance.new("BodyGyro")
+					gyro.Name = "InvokerGyro"
+					gyro.MaxTorque = Vector3.new(0, math.huge, 0)
+					gyro.P = 20000
+					gyro.Parent = hrp
+				end
+				local look = CFrame.lookAt(hrp.Position, Vector3.new(target.HumanoidRootPart.Position.X, hrp.Position.Y, target.HumanoidRootPart.Position.Z))
+				gyro.CFrame = look
+			end
 
 			if not target then
 				wander()
@@ -252,6 +265,19 @@ local function runEnemy(enemy)
 					end
 				end
 			end)
+
+			task.wait(3)
+			
+			if enemy.Name == "Invoker" then
+				if math.random(1, 3) == 3 then
+					local drops = RS:WaitForChild("Drops")
+					local luger = drops.Luger:Clone()
+					luger.Parent = workspace
+					luger.Root.CFrame = hrp.CFrame
+				end
+			end
+			
+			enemy:Destroy()
 		end
 	end)
 end

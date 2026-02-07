@@ -1,0 +1,8 @@
+{
+  "className": "ParticleEmitter",
+  "name": "Effect",
+  "parentId": "1039009",
+  "path": "ReplicatedStorage/Items/Luger/Handle/Muzzle/Effect",
+  "properties": [],
+  "referenceId": "1039011"
+}

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "Shoot",
+  "parentId": "1039010",
+  "path": "ReplicatedStorage/Items/Luger/Handle/Shoot",
+  "properties": [],
+  "referenceId": "1039008"
+}

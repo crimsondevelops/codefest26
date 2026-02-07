@@ -1,8 +1,8 @@
 {
   "className": "Sound",
   "name": "Fire",
-  "parentId": "4655985",
+  "parentId": "1039124",
   "path": "ReplicatedStorage/Enemies/Invoker/Luger/Handle/Fire",
   "properties": [],
-  "referenceId": "4655987"
+  "referenceId": "1039126"
 }

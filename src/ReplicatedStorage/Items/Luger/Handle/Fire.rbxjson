@@ -1,0 +1,8 @@
+{
+  "className": "Sound",
+  "name": "Fire",
+  "parentId": "1039010",
+  "path": "ReplicatedStorage/Items/Luger/Handle/Fire",
+  "properties": [],
+  "referenceId": "1039012"
+}

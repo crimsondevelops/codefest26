@@ -1,0 +1,8 @@
+{
+  "className": "RemoteEvent",
+  "name": "ShootEvent",
+  "parentId": "1039015",
+  "path": "ReplicatedStorage/Items/Luger/ShootEvent",
+  "properties": [],
+  "referenceId": "1039750"
+}

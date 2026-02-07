@@ -1,0 +1,8 @@
+{
+  "className": "Attachment",
+  "name": "Muzzle",
+  "parentId": "1039124",
+  "path": "ReplicatedStorage/Enemies/Invoker/Luger/Handle/Muzzle",
+  "properties": [],
+  "referenceId": "1039123"
+}

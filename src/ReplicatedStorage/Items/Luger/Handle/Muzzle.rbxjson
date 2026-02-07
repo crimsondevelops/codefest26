@@ -1,0 +1,8 @@
+{
+  "className": "Attachment",
+  "name": "Muzzle",
+  "parentId": "1039010",
+  "path": "ReplicatedStorage/Items/Luger/Handle/Muzzle",
+  "properties": [],
+  "referenceId": "1039009"
+}

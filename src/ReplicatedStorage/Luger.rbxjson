@@ -1,0 +1,11 @@
+{
+  "className": "Model",
+  "name": "Luger",
+  "parentId": "16578",
+  "path": "ReplicatedStorage/Luger",
+  "properties": [],
+  "referenceId": "1221359",
+  "tags": [
+    "ITEM"
+  ]
+}

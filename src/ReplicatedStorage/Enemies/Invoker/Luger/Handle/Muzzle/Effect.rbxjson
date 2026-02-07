@@ -1,0 +1,8 @@
+{
+  "className": "ParticleEmitter",
+  "name": "Effect",
+  "parentId": "1039123",
+  "path": "ReplicatedStorage/Enemies/Invoker/Luger/Handle/Muzzle/Effect",
+  "properties": [],
+  "referenceId": "1039125"
+}

@@ -1,8 +1,8 @@
 {
   "className": "Part",
   "name": "Handle",
-  "parentId": "4655984",
+  "parentId": "1039129",
   "path": "ReplicatedStorage/Enemies/Invoker/Luger/Handle",
   "properties": [],
-  "referenceId": "4655985"
+  "referenceId": "1039124"
 }

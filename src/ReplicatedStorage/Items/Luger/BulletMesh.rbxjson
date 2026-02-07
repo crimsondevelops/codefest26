@@ -1,0 +1,8 @@
+{
+  "className": "SpecialMesh",
+  "name": "BulletMesh",
+  "parentId": "1039015",
+  "path": "ReplicatedStorage/Items/Luger/BulletMesh",
+  "properties": [],
+  "referenceId": "1039013"
+}

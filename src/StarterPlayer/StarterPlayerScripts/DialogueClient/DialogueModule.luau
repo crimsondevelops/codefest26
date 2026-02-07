@@ -54,7 +54,6 @@ local function ProcessQueue()
 			local currentDialogue = table.remove(Queue, 1)
 
 			characterHumanoid.WalkSpeed = 0
-			characterHumanoid.JumpPower = 0
 
 			main.NameLabel.Text = currentDialogue.speaker
 			main.Visible = true
@@ -67,7 +66,7 @@ local function ProcessQueue()
 				local continueClicked = false
 				local conn
 				conn = main.Continue.MouseButton1Click:Connect(function()
-					
+					Input = false
 					continueClicked = true
 					conn:Disconnect()
 				end)
@@ -80,8 +79,7 @@ local function ProcessQueue()
 		local leaveTween = TS:Create(main, tweenInfo, {Position = UDim2.new(0.32, 0, 1.2, 0), Rotation = 0})
 		leaveTween:Play()
 
-		characterHumanoid.WalkSpeed = 16
-		characterHumanoid.JumpPower = 50
+		characterHumanoid.WalkSpeed = 12
 
 		Active = false
 	end)
