@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Right Hip",
+  "parentId": "874824",
+  "path": "Workspace/muhazha/Torso/Right Hip",
+  "properties": [],
+  "referenceId": "874819"
+}

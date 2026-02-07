@@ -142,9 +142,7 @@ local function runEnemy(enemy)
 			if result and result.Instance then
 				local h = result.Instance.Parent:FindFirstChild("Humanoid")
 				if h then
-					if math.random(1, 2) == 2 then
-						h:TakeDamage(data.Damage)
-					end
+					h:TakeDamage(data.Damage)
 				end
 			end
 		end
@@ -159,8 +157,12 @@ local function runEnemy(enemy)
 		cooldown = true
 
 		if animTrack then
+			animTrack.Looped = false
 			animTrack:Play()
 		end
+		hum.WalkSpeed = 0
+		task.wait(1)
+		hum.WalkSpeed = 16
 
 		local amount = 2
 		for i = 1, amount do
@@ -174,6 +176,7 @@ local function runEnemy(enemy)
 	end
 
 	task.spawn(function()
+		hum.BreakJointsOnDeath = false
 		while hum.Health > 0 do
 			task.wait(0.2)
 
@@ -210,6 +213,28 @@ local function runEnemy(enemy)
 					end
 				end
 			end
+		end
+		
+		if hum.Health <= 0 then
+			pcall(function()
+				for index,joint in pairs(script.Parent:GetDescendants()) do
+						if joint:IsA("Motor6D") then
+							local socket = Instance.new("BallSocketConstraint")
+							local a1 = Instance.new("Attachment")
+							local a2 = Instance.new("Attachment")
+							a1.Parent = joint.Part0
+							a2.Parent = joint.Part1
+							socket.Parent = joint.Parent
+							socket.Attachment0 = a1
+							socket.Attachment1 = a2
+							a1.CFrame = joint.C0
+							a2.CFrame = joint.C1
+							socket.LimitsEnabled = true
+							socket.TwistLimitsEnabled = true
+							joint:Destroy()
+						end
+					end
+			end)
 		end
 	end)
 end

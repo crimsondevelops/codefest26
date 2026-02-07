@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "RootJoint",
+  "parentId": "874829",
+  "path": "Workspace/muhazha/HumanoidRootPart/RootJoint",
+  "properties": [],
+  "referenceId": "874822"
+}

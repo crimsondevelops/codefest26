@@ -1,0 +1,8 @@
+{
+  "className": "Pose",
+  "name": "Right Leg",
+  "parentId": "467567",
+  "path": "Workspace/KeyframeSequence/Keyframe/HumanoidRootPart/Torso/Right Leg",
+  "properties": [],
+  "referenceId": "467572"
+}
