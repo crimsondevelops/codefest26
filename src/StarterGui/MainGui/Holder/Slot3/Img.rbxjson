@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "StarterGui/MainGui/Holder/Slot1/Image"
+    }
+  },
+  "className": "ImageLabel",
+  "name": "Img",
+  "parentId": "5543121",
+  "path": "StarterGui/MainGui/Holder/Slot3/Img",
+  "properties": [],
+  "referenceId": "9104104"
+}
