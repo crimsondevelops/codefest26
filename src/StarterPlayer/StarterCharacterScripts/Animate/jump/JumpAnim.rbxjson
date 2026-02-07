@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "JumpAnim",
+  "parentId": "8145512",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/jump/JumpAnim",
+  "properties": [],
+  "referenceId": "8145499"
+}

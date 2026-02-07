@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "SitAnim",
+  "parentId": "8145516",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/sit/SitAnim",
+  "properties": [],
+  "referenceId": "8145503"
+}

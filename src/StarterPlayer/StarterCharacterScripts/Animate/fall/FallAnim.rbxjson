@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "FallAnim",
+  "parentId": "8145515",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/fall/FallAnim",
+  "properties": [],
+  "referenceId": "8145502"
+}

@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "StarterGui/MainGui/Holder/Slot1/Title"
+    }
+  },
+  "className": "TextLabel",
+  "name": "Title",
+  "parentId": "5542590",
+  "path": "StarterGui/MainGui/Holder/Slot1/Title",
+  "properties": [],
+  "referenceId": "8779425"
+}

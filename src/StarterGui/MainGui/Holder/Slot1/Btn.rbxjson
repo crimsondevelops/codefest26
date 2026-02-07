@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "StarterGui/MainGui/Holder/Slot1/Btn"
+    }
+  },
+  "className": "TextButton",
+  "name": "Btn",
+  "parentId": "5542590",
+  "path": "StarterGui/MainGui/Holder/Slot1/Btn",
+  "properties": [],
+  "referenceId": "7200910"
+}

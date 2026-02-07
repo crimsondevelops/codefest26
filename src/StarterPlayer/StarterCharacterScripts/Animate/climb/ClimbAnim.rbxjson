@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "ClimbAnim",
+  "parentId": "8145513",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/climb/ClimbAnim",
+  "properties": [],
+  "referenceId": "8145500"
+}

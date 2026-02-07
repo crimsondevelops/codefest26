@@ -1,0 +1,8 @@
+{
+  "className": "RemoteEvent",
+  "name": "EquipEvent",
+  "parentId": "2724676",
+  "path": "ReplicatedStorage/Events/EquipEvent",
+  "properties": [],
+  "referenceId": "9101898"
+}

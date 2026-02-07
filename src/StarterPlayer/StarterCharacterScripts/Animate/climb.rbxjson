@@ -1,0 +1,8 @@
+{
+  "className": "StringValue",
+  "name": "climb",
+  "parentId": "8145505",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/climb",
+  "properties": [],
+  "referenceId": "8145513"
+}

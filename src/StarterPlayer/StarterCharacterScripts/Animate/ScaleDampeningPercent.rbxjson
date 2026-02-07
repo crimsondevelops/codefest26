@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "ScaleDampeningPercent",
+  "parentId": "8145505",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/ScaleDampeningPercent",
+  "properties": [],
+  "referenceId": "8145508"
+}

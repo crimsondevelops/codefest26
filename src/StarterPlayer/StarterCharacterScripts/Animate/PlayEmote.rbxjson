@@ -1,0 +1,8 @@
+{
+  "className": "BindableFunction",
+  "name": "PlayEmote",
+  "parentId": "8145505",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/PlayEmote",
+  "properties": [],
+  "referenceId": "8145504"
+}

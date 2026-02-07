@@ -1,0 +1,8 @@
+{
+  "className": "Script",
+  "name": "ItemServer",
+  "parentId": "9208",
+  "path": "ServerScriptService/ItemServer",
+  "properties": [],
+  "referenceId": "9101883"
+}

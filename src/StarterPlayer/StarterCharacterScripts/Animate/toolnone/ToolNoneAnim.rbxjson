@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "ToolNoneAnim",
+  "parentId": "8145514",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/toolnone/ToolNoneAnim",
+  "properties": [],
+  "referenceId": "8145501"
+}

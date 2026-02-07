@@ -1,0 +1,8 @@
+{
+  "className": "StringValue",
+  "name": "idle",
+  "parentId": "8145505",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/idle",
+  "properties": [],
+  "referenceId": "8145509"
+}

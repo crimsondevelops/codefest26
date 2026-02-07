@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "WalkAnim",
+  "parentId": "8145510",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/walk/WalkAnim",
+  "properties": [],
+  "referenceId": "8145497"
+}

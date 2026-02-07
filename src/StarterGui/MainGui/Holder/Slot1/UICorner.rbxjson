@@ -1,8 +1,8 @@
 {
   "className": "UICorner",
   "name": "UICorner",
-  "parentId": "5543853",
+  "parentId": "5542590",
   "path": "StarterGui/MainGui/Holder/Slot1/UICorner",
   "properties": [],
-  "referenceId": "5543856"
+  "referenceId": "5542593"
 }

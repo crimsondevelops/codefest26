@@ -1,0 +1,8 @@
+{
+  "className": "StringValue",
+  "name": "jump",
+  "parentId": "8145505",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/jump",
+  "properties": [],
+  "referenceId": "8145512"
+}

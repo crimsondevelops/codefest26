@@ -1,0 +1,8 @@
+{
+  "className": "NumberValue",
+  "name": "Weight",
+  "parentId": "8145495",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/idle/Animation1/Weight",
+  "properties": [],
+  "referenceId": "8145506"
+}

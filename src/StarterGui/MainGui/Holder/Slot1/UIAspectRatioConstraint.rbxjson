@@ -1,8 +1,8 @@
 {
   "className": "UIAspectRatioConstraint",
   "name": "UIAspectRatioConstraint",
-  "parentId": "5543853",
+  "parentId": "5542590",
   "path": "StarterGui/MainGui/Holder/Slot1/UIAspectRatioConstraint",
   "properties": [],
-  "referenceId": "5543857"
+  "referenceId": "5542594"
 }

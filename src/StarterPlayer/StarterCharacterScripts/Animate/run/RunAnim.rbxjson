@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "RunAnim",
+  "parentId": "8145511",
+  "path": "StarterPlayer/StarterCharacterScripts/Animate/run/RunAnim",
+  "properties": [],
+  "referenceId": "8145498"
+}
