@@ -1,0 +1,8 @@
+{
+  "className": "ParticleEmitter",
+  "name": "Smoke",
+  "parentId": "909554",
+  "path": "Workspace/FirePit/Prop_BurnedFirewood_Fire/Burnoff/Smoke",
+  "properties": [],
+  "referenceId": "909556"
+}

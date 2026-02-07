@@ -1,7 +1,5 @@
 local RS = game:GetService("ReplicatedStorage")
 
-
-
 local Items = RS:WaitForChild("Items")
 local Events = RS:WaitForChild("Events")
 local equipEvent = Events:WaitForChild("EquipEvent")

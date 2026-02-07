@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Cover",
-  "parentId": "5516100",
+  "parentId": "5511593",
   "path": "Workspace/Canopy/Cover",
   "properties": [],
-  "referenceId": "5516109"
+  "referenceId": "5511592"
 }
