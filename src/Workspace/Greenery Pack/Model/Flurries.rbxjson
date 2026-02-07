@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "_rbxsync_source": {
+      "type": "string",
+      "value": "Workspace/Model/Model/Flurries"
+    }
+  },
+  "className": "Part",
+  "name": "Flurries",
+  "parentId": "404799",
+  "path": "Workspace/Greenery Pack/Model/Flurries",
+  "properties": [],
+  "referenceId": "407767"
+}

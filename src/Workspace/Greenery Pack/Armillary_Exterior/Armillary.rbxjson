@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "ThoughtText": {
+      "type": "string",
+      "value": "An...armillary?<br/> This one seems to be acting strangely."
+    }
+  },
+  "className": "Model",
+  "name": "Armillary",
+  "parentId": "405145",
+  "path": "Workspace/Greenery Pack/Armillary_Exterior/Armillary",
+  "properties": [],
+  "referenceId": "405147"
+}

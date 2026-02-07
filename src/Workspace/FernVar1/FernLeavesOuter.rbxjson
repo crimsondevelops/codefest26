@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "FernLeavesOuter",
+  "parentId": "623159",
+  "path": "Workspace/FernVar1/FernLeavesOuter",
+  "properties": [],
+  "referenceId": "623156",
+  "tags": [
+    "WindShake"
+  ]
+}

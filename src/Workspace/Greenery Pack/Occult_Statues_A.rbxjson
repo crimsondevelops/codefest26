@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "ThoughtText": {
+      "type": "string",
+      "value": "What am I looking at?"
+    }
+  },
+  "className": "Model",
+  "name": "Occult_Statues_A",
+  "parentId": "408393",
+  "path": "Workspace/Greenery Pack/Occult_Statues_A",
+  "properties": [],
+  "referenceId": "404816",
+  "tags": [
+    "ThoughtBubble"
+  ]
+}

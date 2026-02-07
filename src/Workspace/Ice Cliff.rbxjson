@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Ice Cliff",
+  "parentId": "13",
+  "path": "Workspace/Ice Cliff",
+  "properties": [],
+  "referenceId": "767534",
+  "tags": [
+    "WALL"
+  ]
+}

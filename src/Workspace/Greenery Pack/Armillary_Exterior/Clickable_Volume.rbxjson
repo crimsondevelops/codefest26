@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "ThoughtText": {
+      "type": "string",
+      "value": "An...armillary?<br/> This one seems to be acting strangely."
+    }
+  },
+  "className": "Part",
+  "name": "Clickable_Volume",
+  "parentId": "405145",
+  "path": "Workspace/Greenery Pack/Armillary_Exterior/Clickable_Volume",
+  "properties": [],
+  "referenceId": "405277",
+  "tags": [
+    "ThoughtBubble"
+  ]
+}

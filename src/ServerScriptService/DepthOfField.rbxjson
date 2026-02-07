@@ -1,0 +1,8 @@
+{
+  "className": "DepthOfFieldEffect",
+  "name": "DepthOfField",
+  "parentId": "9208",
+  "path": "ServerScriptService/DepthOfField",
+  "properties": [],
+  "referenceId": "9200"
+}

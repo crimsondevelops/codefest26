@@ -1,0 +1,8 @@
+{
+  "className": "SunRaysEffect",
+  "name": "SunRays",
+  "parentId": "9208",
+  "path": "ServerScriptService/SunRays",
+  "properties": [],
+  "referenceId": "9216"
+}

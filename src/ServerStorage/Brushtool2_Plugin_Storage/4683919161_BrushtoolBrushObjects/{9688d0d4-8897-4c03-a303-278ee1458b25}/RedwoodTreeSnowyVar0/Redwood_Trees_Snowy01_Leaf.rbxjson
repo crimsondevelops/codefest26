@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Redwood_Trees_Snowy01_Leaf",
+  "parentId": "828165",
+  "path": "ServerStorage/Brushtool2_Plugin_Storage/4683919161_BrushtoolBrushObjects/{9688d0d4-8897-4c03-a303-278ee1458b25}/RedwoodTreeSnowyVar0/Redwood_Trees_Snowy01_Leaf",
+  "properties": [],
+  "referenceId": "828166",
+  "tags": [
+    "WindShake2"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Leaves",
+  "parentId": "620475",
+  "path": "Workspace/BushVar1/Leaves",
+  "properties": [],
+  "referenceId": "620476",
+  "tags": [
+    "WindShake"
+  ]
+}

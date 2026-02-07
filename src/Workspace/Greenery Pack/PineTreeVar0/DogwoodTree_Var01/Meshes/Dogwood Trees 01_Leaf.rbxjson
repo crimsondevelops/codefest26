@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Meshes/Dogwood Trees 01_Leaf",
+  "parentId": "404796",
+  "path": "Workspace/Greenery Pack/PineTreeVar0/DogwoodTree_Var01/Meshes[SLASH]Dogwood Trees 01_Leaf",
+  "properties": [],
+  "referenceId": "404212",
+  "tags": [
+    "WindShake"
+  ]
+}

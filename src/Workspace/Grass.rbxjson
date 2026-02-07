@@ -1,10 +1,10 @@
 {
-  "className": "Part",
+  "className": "MeshPart",
   "name": "Grass",
   "parentId": "13",
   "path": "Workspace/Grass",
   "properties": [],
-  "referenceId": "552184",
+  "referenceId": "592999",
   "tags": [
     "_BrushtoolBrushed"
   ]

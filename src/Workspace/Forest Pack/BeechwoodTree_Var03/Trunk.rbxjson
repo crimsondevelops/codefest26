@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Trunk",
-  "parentId": "398413",
+  "parentId": "398412",
   "path": "Workspace/Forest Pack/BeechwoodTree_Var03/Trunk",
   "properties": [],
-  "referenceId": "398338"
+  "referenceId": "398335"
 }

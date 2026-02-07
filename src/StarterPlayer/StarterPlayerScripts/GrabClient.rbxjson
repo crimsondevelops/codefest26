@@ -1,8 +1,3 @@
 {
-  "className": "LocalScript",
-  "name": "GrabClient",
-  "parentId": "9214",
-  "path": "StarterPlayer/StarterPlayerScripts/GrabClient",
-  "properties": [],
-  "referenceId": "9101820"
+  "properties": {}
 }

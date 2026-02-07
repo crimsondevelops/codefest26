@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Trunk",
-  "parentId": "582662",
+  "parentId": "728059",
   "path": "Workspace/Redwoodtree-LowLOD-Var01/Trunk",
   "properties": [],
-  "referenceId": "582661"
+  "referenceId": "728056"
 }

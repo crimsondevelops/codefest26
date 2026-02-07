@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Leaf",
+  "parentId": "404800",
+  "path": "Workspace/Greenery Pack/BroadLeafTreeVar0/Leaf",
+  "properties": [],
+  "referenceId": "404220",
+  "tags": [
+    "WindShake2"
+  ]
+}

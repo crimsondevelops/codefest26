@@ -1,0 +1,11 @@
+{
+  "className": "MeshPart",
+  "name": "Planet_Ring_4",
+  "parentId": "404819",
+  "path": "Workspace/Greenery Pack/Armillary_Small/Armillary/Planet_Ring_4",
+  "properties": [],
+  "referenceId": "404250",
+  "tags": [
+    "LocalSpaceRotation"
+  ]
+}

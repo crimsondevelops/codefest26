@@ -1,0 +1,8 @@
+{
+  "className": "BloomEffect",
+  "name": "Bloom",
+  "parentId": "9208",
+  "path": "ServerScriptService/Bloom",
+  "properties": [],
+  "referenceId": "9192"
+}
