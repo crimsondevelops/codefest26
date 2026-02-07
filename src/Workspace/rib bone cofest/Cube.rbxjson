@@ -1,8 +1,8 @@
 {
   "className": "MeshPart",
   "name": "Cube",
-  "parentId": "877096",
+  "parentId": "471592",
   "path": "Workspace/rib bone cofest/Cube",
   "properties": [],
-  "referenceId": "877093"
+  "referenceId": "471591"
 }
