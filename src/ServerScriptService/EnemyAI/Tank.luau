@@ -1,7 +1,7 @@
 local module = {
 	Animation = "rbxassetid://127823640622742", -- Punch
-	Cooldown = ,
-	Damage = 15,
+	Cooldown = 7,
+	Damage = 35,
 	Type = "Offensive",
 	Class = "Melee"
 }

@@ -1,0 +1,8 @@
+{
+  "className": "Animation",
+  "name": "WalkAnim",
+  "parentId": "18338",
+  "path": "ReplicatedStorage/SpecialEnemies/Cloaker/Animate/walk/WalkAnim",
+  "properties": [],
+  "referenceId": "9268"
+}

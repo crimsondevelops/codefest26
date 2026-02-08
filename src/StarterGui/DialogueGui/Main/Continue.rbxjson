@@ -1,8 +1,8 @@
 {
   "className": "TextButton",
   "name": "Continue",
-  "parentId": "10843",
+  "parentId": "10905",
   "path": "StarterGui/DialogueGui/Main/Continue",
   "properties": [],
-  "referenceId": "19138"
+  "referenceId": "21154"
 }
