@@ -7,8 +7,8 @@
   },
   "className": "Tool",
   "name": "Apple",
-  "parentId": "9101905",
+  "parentId": "10940",
   "path": "ReplicatedStorage/Items/Apple",
   "properties": [],
-  "referenceId": "9101912"
+  "referenceId": "411514"
 }

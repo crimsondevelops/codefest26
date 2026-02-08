@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Neck",
+  "parentId": "961243",
+  "path": "Workspace/Blockr6/Torso/Neck",
+  "properties": [],
+  "referenceId": "961256"
+}

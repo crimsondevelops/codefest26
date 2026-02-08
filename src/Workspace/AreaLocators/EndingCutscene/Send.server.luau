@@ -5,7 +5,7 @@ script.Parent.Touched:Connect(function(hit)
 		script.Parent.CanTouch = false
 		hit.Parent.HumanoidRootPart.Position = Vector3.new(219.384, 243.845, 1685.093)
 		hit.Parent.HumanoidRootPart.Orientation = Vector3.new(0.086, -178.497, 0.472)
-		hit.Parent.HumanoidRootPart.Anchored =
+		hit.Parent.HumanoidRootPart.Anchored = true
 		
 		hit.Parent.Humanoid:ChangeState(Enum.HumanoidStateType.None)
 		

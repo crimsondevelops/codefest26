@@ -1,6 +1,9 @@
 local RS = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
+local Events = RS:WaitForChild("Events")
+local blockEvent = Events:WaitForChild("BlockEvent")
+
 function createHitbox(char, size, collision, anchor, name, massless, transparency)
 	size = size or Vector3.new(6,6,6)
 	collision = false
@@ -113,7 +116,9 @@ local function runEnemy(enemy)
 			if not hit.Parent then conn:Disconnect() return end
 			local h = hit.Parent:FindFirstChild("Humanoid")
 			if h and hit.Parent ~= enemy and Players:GetPlayerFromCharacter(hit.Parent) then
-				h:TakeDamage(data.Damage or 10)
+				if not Players:GetPlayerFromCharacter(hit.Parent):HasTag("Blocking") then
+					h:TakeDamage(data.Damage)
+				end
 				conn:Disconnect()
 				hitbox:Destroy()
 			end
@@ -159,7 +164,9 @@ local function runEnemy(enemy)
 			if result and result.Instance then
 				local h = result.Instance.Parent:FindFirstChild("Humanoid")
 				if h and Players:GetPlayerFromCharacter(result.Instance.Parent) then
-					h:TakeDamage(data.Damage)
+					if not Players:GetPlayerFromCharacter(result.Instance.Parent):HasTag("Blocking") then
+						h:TakeDamage(data.Damage)
+					end
 				end
 			end
 		end
@@ -294,6 +301,13 @@ local function runEnemy(enemy)
 					luger.Parent = workspace
 					luger.Root.CFrame = hrp.CFrame
 				end
+			elseif enemy.Name == "Cultist" then
+				if math.random(1, 3) == 3 then
+					local drops = RS:WaitForChild("Drops")
+					local luger = drops.Vial:Clone()
+					luger.Parent = workspace
+					luger.Root.CFrame = hrp.CFrame
+				end
 			end
 
 			enemy:Destroy()
@@ -314,4 +328,12 @@ end
 workspace.Enemies.ChildAdded:Connect(function(enemy)
 	task.wait(0.2)
 	register(enemy)
+end)
+
+blockEvent.OnServerEvent:Connect(function(player, bool)
+	if bool then
+		player:AddTag("Blocking")
+	else
+		player:RemoveTag("Blocking")
+	end
 end)

@@ -1,8 +1,8 @@
 {
   "className": "Frame",
   "name": "Main",
-  "parentId": "18100",
+  "parentId": "18492",
   "path": "StarterGui/DialogueGui/Main",
   "properties": [],
-  "referenceId": "10905"
+  "referenceId": "11038"
 }

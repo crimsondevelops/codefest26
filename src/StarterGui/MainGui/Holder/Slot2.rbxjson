@@ -1,8 +1,8 @@
 {
   "className": "Frame",
   "name": "Slot2",
-  "parentId": "11032",
+  "parentId": "11033",
   "path": "StarterGui/MainGui/Holder/Slot2",
   "properties": [],
-  "referenceId": "11033"
+  "referenceId": "11034"
 }

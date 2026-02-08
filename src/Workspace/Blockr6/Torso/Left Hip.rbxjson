@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "Left Hip",
+  "parentId": "961243",
+  "path": "Workspace/Blockr6/Torso/Left Hip",
+  "properties": [],
+  "referenceId": "961255"
+}

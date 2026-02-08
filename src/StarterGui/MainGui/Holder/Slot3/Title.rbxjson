@@ -7,8 +7,8 @@
   },
   "className": "TextLabel",
   "name": "Title",
-  "parentId": "10903",
+  "parentId": "11036",
   "path": "StarterGui/MainGui/Holder/Slot3/Title",
   "properties": [],
-  "referenceId": "21167"
+  "referenceId": "21573"
 }

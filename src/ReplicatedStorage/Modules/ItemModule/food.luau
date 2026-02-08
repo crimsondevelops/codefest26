@@ -8,7 +8,18 @@ local types = {
 		
 		AnimId = "rbxassetid://102469612610014",
 		AnimTrack = nil,
-	}
+	},
+	
+	["Vial"] = {
+		Health = 50,
+
+		SoundId = "rbxassetid://122960938851347",
+		Sound = nil,
+
+		AnimId = "rbxassetid://102469612610014",
+		AnimTrack = nil,
+	},
+	
 }
 
 local SS = game:GetService("SoundService")
@@ -16,6 +27,7 @@ local RS = game:GetService("ReplicatedStorage")
 
 local Events = RS:WaitForChild("Events")
 local destroyEvent = Events:WaitForChild("DestroyEvent")
+local healEvent = Events:WaitForChild("HealEvent")
 
 function module.Init(player:Player, tool:Tool)
 	local selected = types[tool.Name]
@@ -37,7 +49,15 @@ function module.Init(player:Player, tool:Tool)
 		end
 		
 		if selected.Health then
-			hum:TakeDamage(-selected.Health)
+			if tool.Name == "Vial" then
+				if math.random(1, 2) == 1 then
+					healEvent:FireServer(-selected.Health)
+				else
+					healEvent:FireServer(selected.Health)
+				end
+			else
+				healEvent:FireServer(-selected.Health)
+			end
 		end
 	end
 end

@@ -1,0 +1,11 @@
+{
+  "className": "Model",
+  "name": "Vial",
+  "parentId": "10943",
+  "path": "ReplicatedStorage/Drops/Vial",
+  "properties": [],
+  "referenceId": "411493",
+  "tags": [
+    "ITEM"
+  ]
+}

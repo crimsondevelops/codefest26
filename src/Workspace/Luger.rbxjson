@@ -1,0 +1,11 @@
+{
+  "className": "Model",
+  "name": "Luger",
+  "parentId": "13",
+  "path": "Workspace/Luger",
+  "properties": [],
+  "referenceId": "774873",
+  "tags": [
+    "ITEM"
+  ]
+}

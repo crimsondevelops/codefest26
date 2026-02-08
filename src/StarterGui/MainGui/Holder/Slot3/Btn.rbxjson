@@ -7,8 +7,8 @@
   },
   "className": "TextButton",
   "name": "Btn",
-  "parentId": "11035",
+  "parentId": "11036",
   "path": "StarterGui/MainGui/Holder/Slot3/Btn",
   "properties": [],
-  "referenceId": "21558"
+  "referenceId": "21559"
 }

@@ -1,0 +1,8 @@
+{
+  "className": "RemoteEvent",
+  "name": "DestroyEvent",
+  "parentId": "10939",
+  "path": "ReplicatedStorage/Events/DestroyEvent",
+  "properties": [],
+  "referenceId": "598675"
+}

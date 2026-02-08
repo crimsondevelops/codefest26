@@ -1,8 +1,8 @@
 {
   "className": "TextLabel",
   "name": "Title",
-  "parentId": "10905",
+  "parentId": "11038",
   "path": "StarterGui/DialogueGui/Main/Title",
   "properties": [],
-  "referenceId": "21170"
+  "referenceId": "21576"
 }

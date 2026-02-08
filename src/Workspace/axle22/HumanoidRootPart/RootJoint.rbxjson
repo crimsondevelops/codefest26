@@ -1,0 +1,8 @@
+{
+  "className": "Motor6D",
+  "name": "RootJoint",
+  "parentId": "463324",
+  "path": "Workspace/axle22/HumanoidRootPart/RootJoint",
+  "properties": [],
+  "referenceId": "463349"
+}
