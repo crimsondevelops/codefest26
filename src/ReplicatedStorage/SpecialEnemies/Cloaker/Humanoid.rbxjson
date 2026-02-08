@@ -1,8 +1,8 @@
 {
   "className": "Humanoid",
   "name": "Humanoid",
-  "parentId": "16052",
+  "parentId": "16206",
   "path": "ReplicatedStorage/SpecialEnemies/Cloaker/Humanoid",
   "properties": [],
-  "referenceId": "10915"
+  "referenceId": "11049"
 }

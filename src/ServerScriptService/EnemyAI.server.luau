@@ -63,6 +63,20 @@ local function runEnemy(enemy)
 	if not moduleScript then return end
 	local data = require(moduleScript)
 
+	if enemy.Name == "Tank" then
+		hum.MaxHealth = hum.MaxHealth * 2
+		hum.Health = hum.MaxHealth
+	end
+
+	if enemy.Name == "Cloaker" then
+		task.spawn(function()
+			while hum.Health > 0 do
+				hum.WalkSpeed = math.random(26, 36)
+				task.wait(math.random(1,3))
+			end
+		end)
+	end
+
 	local animTrack
 	if data.Animation then
 		local anim = Instance.new("Animation")
@@ -238,8 +252,10 @@ local function runEnemy(enemy)
 						melee(target)
 					end
 				else
-					if dist > 25 then
+					if dist > 25 and enemy.Name ~= "Tank" then
 						hum:MoveTo(target.HumanoidRootPart.Position)
+					elseif enemy.Name == "Tank" and dist > 15 then
+						
 					else
 						hum:MoveTo(hrp.Position)
 						ranged(target)
@@ -270,7 +286,7 @@ local function runEnemy(enemy)
 			end)
 
 			task.wait(3)
-			
+
 			if enemy.Name == "Invoker" then
 				if math.random(1, 3) == 3 then
 					local drops = RS:WaitForChild("Drops")
@@ -279,7 +295,7 @@ local function runEnemy(enemy)
 					luger.Root.CFrame = hrp.CFrame
 				end
 			end
-			
+
 			enemy:Destroy()
 		end
 	end)
